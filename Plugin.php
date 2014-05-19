@@ -15,14 +15,14 @@ class Plugin extends PluginBase
             'name'        => 'Gistie',
             'description' => 'Provides a simple way to share snippets and pastes with others using Github\'s gist.',
             'author'      => 'Rubens Mariuzzo',
-            'icon'        => 'icon-leaf'
+            'icon'        => 'icon-github'
         ];
     }
 
     public function registerComponents()
     {
         return [
-            '\Mariuzzo\Gistie\Components\Gistie' => 'gist1'
+            '\Mariuzzo\Gistie\Components\Gistie' => 'gist'
         ];
     }
 
