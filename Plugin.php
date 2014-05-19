@@ -22,7 +22,6 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return [
-            // '\October\Demo\Components\Todo' => 'demoTodo'
             '\Mariuzzo\Gistie\Components\Gistie' => 'gist1'
         ];
     }

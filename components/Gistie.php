@@ -4,6 +4,7 @@ use Cms\Classes\ComponentBase;
 
 class Gistie extends ComponentBase
 {
+    public $url;
 
     public function componentDetails()
     {
@@ -19,7 +20,7 @@ class Gistie extends ComponentBase
             'url' => [
                 'description' => 'The gist url.',
                 'title'       => 'Gist URL',
-                'default'     => '',
+                'default'     => 'https://gist.github.com/',
                 'type'        => 'string'
             ]
         ];
@@ -27,9 +28,7 @@ class Gistie extends ComponentBase
 
     public function onRun()
     {
-        $this->page['gist'] = [
-            'url' => $this->property('url')
-        ];
+        $this->url = $this->property('url');
     }
 
 }
